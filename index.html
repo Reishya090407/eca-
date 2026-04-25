@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Reii | Koleksi flat shoes</title>
+    <style>
+        /* Gaya Visual Dasar */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+        
+        header { background: #b6eef4; color: rgb(248, 243, 243); padding: 40px 20px; text-align: center; border-bottom: 5px solid #27ae60; }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        header p { font-style: italic; color: #ebfdfe; }
+        
+        nav { background: #b1b7b8; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: rgb(255, 245, 245); text-decoration: none; margin: 0 20px; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: #fcfefd; }
+
+        h2 { text-align: center; color: #858e8e; margin-top: 50px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Pengaturan Layout Produk */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product {
+            background: rgb(163, 208, 211);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgb(247, 240, 240);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover { transform: translateY(-10px); }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 { margin: 10px 0; font-size: 1.3rem; color: #f4f8fb; }
+        .product p { color: #f8fbfb; font-size: 0.9rem; min-height: 40px; }
+        .product span { color: #ddece4; font-weight: bold; font-size: 1.4rem; display: block; margin: 15px 0; }
+
+        button {
+            background-color: #a9e1e9;
+            color: rgb(222, 238, 238);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        button:hover { background-color: #7de4e4; }
+
+        /* Footer */
+        footer { background: #b3e5f3; color: white; padding: 40px 20px; margin-top: 60px; text-align: center; }
+        .footer-menu ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 30px; margin-bottom: 20px; }
+        .footer-menu a { color: #b7bfc4; text-decoration: none; font-size: 0.9rem; }
+        .contact-info { margin-bottom: 20px; line-height: 1.6; }
+        .social-media img { width: 28px; margin: 0 12px; filter: invert(1); transition: 0.3s; }
+        .social-media img:hover { transform: scale(1.2); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TOKO Reii</h1>
+        <p>Flat Shoes Gemas yang Bikin OOTD Makin Level Up!</p>
+    </header>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#featured-products">Unggulan</a>
+        <a href="#new-arrivals">Terbaru</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <main>
+        <section id="featured-products">
+            <h2>flagship product</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Sepatu Merah">
+                    <h3>The Classic Ribbon (Si Manis Pita)</h3>
+                    <p>Langkah Cantik, Nyaman Seharian!.</p>
+                    <span>Rp 850.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500" alt="Sepatu Casual">
+                    <h3>Airy Ballerina</h3>
+                    <p>Tampilan elegan untuk acara formal maupun santai.</p>
+                    <span>Rp 1.200.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500" alt="Sepatu Nike">
+                    <h3>Oxford Flat</h3>
+                    <p>Perpaduan gaya maskulin dan feminin.</p>
+                    <span>Rp 950.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+        <section id="featured-products">
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Sepatu Merah">
+                    <h3>Earthy Moccasins</h3>
+                    <p>Membawa nuansa alam dengan warna-warna bumi (earth tone)..</p>
+                    <span>Rp 850.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500" alt="Sepatu Casual">
+                    <h3>Elegant Mary Jane</h3>
+                    <p>Model ini sangat elegan dan cocok untuk acara formal.</p>
+                    <span>Rp 1.200.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500" alt="Sepatu Nike">
+                    <h3>Soft-Walk</h3>
+                    <p>Cantik Tanpa Drama Kaki Lecet!</p>
+                    <span>Rp 950.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-products">
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Sepatu Merah">
+                    <h3>Big Bow "Gemy" Flats 🎀</h3>
+                    <p>Si Paling Curi Perhatian!</p>
+                    <span>Rp 850.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500" alt="Sepatu Casual">
+                    <h3>Rain-Check Jelly Flats 💧</h3>
+                    <p>Tetap Cantik di Segala Cuaca!</p>
+                    <span>Rp 1.200.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500" alt="Sepatu Nike">
+                    <h3>Velvet Royal Flat Shoes 👑</h3>
+                    <p>Kemewahan Tanpa Harus Pakai Heels.</p>
+                    <span>Rp 950.000</span>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Katalog</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p><strong>Lokasi:</strong> Jl.sukajadi No. 10, Bandung</p>
+            <p><strong>Email:</strong> admin@tokoReii.com | <strong>WA:</strong>0831-2269-6184</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+        </div>
+        <p style="font-size: 0.8rem; color: #f6feff; margin-top: 30px;">&copy; 2026 Toko Reii. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
